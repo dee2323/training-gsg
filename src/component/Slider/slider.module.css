@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins:wght@300&display=swap');
+
+.slider {
+    background-image: url('./images/Rectangle.png');
+    height: 600px;
+    position: relative;
+    /* width: 1440px; */
+}
+
+h1,
+.p1 {
+    color: white;
+    font-family: 'Poppins', 'sans-serif';
+    position: absolute;
+    right: 130px;
+    top: 163px;
+    width: 290px;
+    font-size: 60px;
+    line-height: 1.3;
+    font-weight: 400;
+
+}
+
+
+.p1 {
+    top: 358px;
+    right: 120px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.p1::after {
+    content: "";
+    width: 18%;
+    top: 30px;
+    left: -5px;
+    position: absolute;
+    border-bottom: 1px white solid;
+}
+
+/* p::before {
+    border-left: 1px solid #33333A;
+    border-top: 1px solid #33333A;
+    width: 25px;
+    content: '';
+    height: 25px;
+    float: right;
+    transform: translate(390%, -239%) rotate(135deg);
+    -webkit-transform: translate(390%, -239%) rotate(135deg);
+    -moz-transform: translate(390%, -239%) rotate(135deg);
+    -ms-transform: translate(390%, -239%) rotate(135deg);
+    -o-transform: translate(390%, -239%) rotate(135deg);
+} 
+
+/* h1::before {
+    border-top-left-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    width: 60px;
+    content: '';
+    height: 90px;
+    float: right;
+    background-color: #D8D8D8;
+    transform: translate(215%, 110%);
+    -webkit-transform: translate(215%, 110%);
+    -moz-transform: translate(215%, 110%);
+    -ms-transform: translate(215%, 110%);
+    -o-transform: translate(215%, 110%);
+} */
+@media only screen and (max-width :700px) {
+    .slider {
+        background-image: url('./images/Rectangle.png');
+        height: 598px;
+        background-position: center center;
+        position: relative;
+    }
+
+    h1,
+    .p1 {
+        color: white;
+        font-family: 'Poppins', 'sans-serif';
+        position: absolute;
+        left: 209px;
+        bottom: 163px;
+        width: 200px;
+        font-size: 20px;
+        line-height: 0;
+        font-weight: 400;
+
+    }
+
+    .p1 {
+        top: 295px;
+        right: 120px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}

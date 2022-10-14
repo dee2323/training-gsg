@@ -1,0 +1,57 @@
+.card {
+    width: "263px";
+    height: "390px";
+    box-shadow: 0 0 0.5rem rgba(87, 71, 71, 0.247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-right: 17px;
+    margin-bottom: 17px;
+
+}
+
+.card h3 {
+    width: 80%;
+    color: rgba(51, 51, 58, 1);
+    font-family: "ProximaNova-Regular";
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 6px 0;
+    font-family: 'Poppins', 'sans-serif';
+    margin-left: -40px;
+}
+
+@media only screen and (max-width :700px) {
+    .card {
+        width: 96%;
+        height: "390px";
+        box-shadow: 0 0 0.5rem rgba(87, 71, 71, 0.247);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        margin-right: 19px;
+
+    }
+
+    .card h3 {
+        width: 80%;
+        color: rgba(51, 51, 58, 1);
+        font-family: "ProximaNova-Regular";
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0px;
+        text-align: left;
+        padding: 6px 0;
+        font-family: 'Poppins', 'sans-serif';
+        margin-left: -40px;
+    }
+
+}

@@ -1,0 +1,76 @@
+.container {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: red; */
+}
+
+.logo {
+    width: 10%;
+    cursor: pointer;
+}
+
+.menu {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width :767px) {
+
+    .container {
+        width: 100%;
+        display: flex;
+        margin: 0;
+        align-items: center;
+        justify-content: flex-start;
+        /* background-color: red; */
+    }
+
+    .menu {
+        display: block;
+        margin-left: 70px;
+
+
+    }
+
+    .logo {
+        width: 20%;
+    }
+}
+
+
+@media (min-width:768px) {
+    .container {
+        width: 738px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 962px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 90%
+    }
+}
+
+
+/* MY FRAMWORK */
+.center-text {
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    padding: 0 15px;
+}
+
+.clearfix {
+    clear: both;
+}

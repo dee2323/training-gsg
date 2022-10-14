@@ -1,0 +1,31 @@
+.icons li::after {
+    content: none;
+    font-size: 12px;
+    color: #33333A;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+
+.icons {
+    width: 30%;
+}
+
+@media only screen and (max-width :700px) {
+    .icons {
+        width: 60%;
+    }
+
+    .icons li img {
+
+        width: 10px;
+        height: 20px;
+    }
+
+    .icons li {
+        font-size: 12px;
+    }
+
+}

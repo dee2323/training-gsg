@@ -1,0 +1,16 @@
+.Recommended {
+    height: 488px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.linkin {
+    margin-right: 1rem;
+    padding: 0.7rem 1rem;
+    color: hsl(0, 0%, 100%);
+    background: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+}

@@ -1,0 +1,148 @@
+.footer {
+    height: 17.8rem;
+    background-color: #33333A;
+
+    color: white;
+}
+
+.footer ul {
+    margin-top: 41px;
+    margin-left: 100px;
+    justify-content: space-around;
+    width: 776px;
+}
+
+.footer .list-1 li {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer .list-2 li {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -50px;
+}
+
+.footer .list-2 {
+    width: 1142px;
+}
+
+.footer input {
+    padding: 12px 30px;
+    border: 1px white solid;
+    background-color: white;
+    text-transform: uppercase;
+    letter-spacing: 2;
+    font-size: 12px;
+}
+
+.footer .email {
+    width: 300px;
+    padding: 12px;
+    background-color: #33333A;
+    color: white;
+}
+
+.footer div {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins:wght@300&display=swap');
+
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+ul li {
+    color: #33333A;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-top: 20px;
+
+}
+
+@media (max-width:767px) {
+    .footer {
+        width: 100%;
+        overflow-x: hidden;
+        position: relative;
+        height: 18rem;
+    }
+
+    .list-1 {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+
+        font-family: 'Poppins', 'sans-serif';
+
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    .footer ul {
+        margin-top: 41px;
+        margin-left: -12px;
+        justify-content: space-around;
+        width: 48rem;
+    }
+
+    .footer input {
+        bottom: 20px;
+        left: 90px;
+        padding: 12px 30px;
+        border: 1px white solid;
+        background-color: white;
+        text-transform: uppercase;
+        letter-spacing: 2;
+        position: absolute;
+        font-size: 10px;
+    }
+
+    .footer .email {
+        width: 100px;
+        padding: 12px;
+        background-color: #33333A;
+
+        color: white;
+    }
+
+    .footer .submit {
+        display: none;
+    }
+
+    .footer .list-1 {
+        margin-top: -4px;
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    .footer div {
+        color: white;
+        text-align: center;
+        margin-top: 100px;
+        font-family: 'Poppins', 'sans-serif';
+    }
+
+    .footer .list-2 {
+        display: none;
+    }
+
+
+    .footer .list-2 li {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 0px;
+    }
+}

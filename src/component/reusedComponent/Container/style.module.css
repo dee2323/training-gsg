@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins:wght@300&display=swap');
+
+.container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media only screen and (max-width :700px) {
+    .container {
+        /* height: 1023px; */
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+}
+
+/* .container {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+
+@media (max-width: 90em) {
+    .container {
+        padding: 0 15rem;
+    }
+} */
+
+@media (max-width: 85em) {
+    .container {
+        padding: 0 2.4rem;
+    }
+}

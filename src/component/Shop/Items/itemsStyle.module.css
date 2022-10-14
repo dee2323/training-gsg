@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins:wght@300&display=swap');
+
+.row {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+
+}
+
+.row .col1 {
+    width: "263px";
+    height: "390px";
+    box-shadow: 0 0 0.5rem rgba(87, 71, 71, 0.247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin-right: 19px;
+
+
+}
+
+.row .col1 .txt {
+    background-color: #fff;
+    color: #030303;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18;
+    height: 50px;
+    position: absolute;
+    bottom: 60px;
+    padding: 20px;
+}
+@media only screen and (max-width :700px) {
+    .row .col1 {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+}

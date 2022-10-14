@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins:wght@300&display=swap');
+
+h2 {
+    color: rgba(51, 51, 58, 1);
+    font-family: "VLNewParisHeadline";
+    font-size: 42px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 60px;
+    font-family: 'Poppins', 'sans-serif';
+    padding: 62px;
+}

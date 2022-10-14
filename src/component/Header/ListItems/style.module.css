@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins:wght@300&display=swap');
+
+ul {
+    list-style: none;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+}
+
+.items .innerItems {
+    color: #33333A;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+
+
+@media only screen and (max-width :700px) {
+    .items .innerItems::after {
+        display: none;
+    }
+
+    .items {
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        display: none;
+        z-index: 2;
+
+    }
+}
+
+@media (min-width:1200px) {
+    .items .innerItems::after {
+        border-left: 1px solid #33333A;
+        border-top: 1px solid #33333A;
+        width: 4px;
+        content: '';
+        height: 4px;
+        right: 6rem;
+        float: right;
+        transform: translate(100%, 99%) rotate(-135deg);
+        -webkit-transform: translate(100%, 99%) rotate(-135deg);
+        -moz-transform: translate(100%, 99%) rotate(-135deg);
+        -ms-transform: translate(100%, 99%) rotate(-135deg);
+        -o-transform: translate(100%, 99%) rotate(-135deg);
+    }
+}

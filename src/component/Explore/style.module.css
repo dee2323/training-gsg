@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins:wght@300&display=swap");
+
+
+
+.mainContainer {
+    background-color: rgb(250, 248, 248);
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.exploreContainer {
+    padding: 20px;
+    background-color: rgb(250, 248, 248);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 620px;
+}
+
+.first {
+    width: 500px;
+    height: 600px;
+}
+
+.Title,
+.rightTitle,
+.rightTitle1,
+.rightTitle2 {
+    opacity: 1;
+    color: rgba(51, 51, 58, 1);
+    font-size: 25px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.rightTitle {
+    width: 170px;
+}
+
+.rightTitle1 {
+    height: 80px;
+}
+
+.Description {
+    opacity: 1;
+    font-family: "Poppins", sans-serif;
+    color: rgba(51, 51, 58, 1);
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 500px;
+}
+
+.Image {
+    width: 500px;
+    height: 360px;
+    padding-top: 35px;
+}
+
+.otherContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 16rem));
+    gap: 4rem;
+    justify-content: center;
+    width: 700px;
+}
+
+.rightImage {
+    width: 250px;
+    height: 125px;
+}
+
+.rightTitle1 {
+    width: 300px;
+}
+
+.rightDescription1 {
+    width: 290px;
+    height: 330px;
+}
+
+.rightTitle2 {
+    width: 300px;
+}
+
+.rightDescription2 {
+    width: 290px;
+    height: 330px;
+}
+
+@media(max-width:767px) {
+    .mainContainer {
+        display: none;
+    }
+}
