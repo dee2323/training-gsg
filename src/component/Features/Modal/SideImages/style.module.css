@@ -1,0 +1,16 @@
+.col1 {
+    width: 8%;
+    height: 80%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col1 img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-top: 20px;
+
+}

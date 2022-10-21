@@ -28,10 +28,53 @@
     color: white;
 }
 
+.header {
+    opacity: 1;
+    color: rgba(3, 3, 3, 1);
+    font-family: "ProximaNova-Light";
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 14px;
+    height: 1%;
 
-@media screen and (max-width:767px) {
-    .btn {
-        align-self: center;
-        margin-left: 95px;
-    }
+
+}
+
+.header button {
+    background-color: transparent;
+    font-size: 20px;
+    border: 0;
+    width: 70px;
+    /* height: 35px; */
+    display: inline-block;
+    margin-top: -10px;
+    margin-left: 45rem;
+    /* text-align: center; */
+
+}
+
+.modalContainer {
+    margin-top: -25px;
+    height: 89%;
+    display: flex;
+
+}
+
+.modalContainer .col3 {
+    height: 100%;
+    flex-wrap: nowrap;
+    width: 60%;
+}
+
+
+
+
+
+.modalContainer h3 {
+    padding: 20px;
+    font-size: 18px;
+    margin-top: -6px;
 }

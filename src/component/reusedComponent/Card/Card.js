@@ -8,18 +8,12 @@ export default class Card extends Component {
     products:data.products,
     
   }
-  // componentDidMount(){
-  //   axios.get('https://dummyjson.com/products').then(res=>this.setState({
-  //     ...this.state,
-  //     products:res.data.products
-  //   }))
-    
-  // }
-
   render(){
     return (
-      <div className={`${style.card}`} onClick={()=>this.setState({...this.state,
-        show:true})}>
+      <div className={`${style.card}`}  onMouseOver={()=>this.setState({...this.state,
+          show:true})} onMouseOut={()=>this.setState({...this.state,
+            show:false})} onMouseLeave={()=>this.setState({...this.state,
+              show:false})} >
       <img
         src={this.props.img}
         alt=""

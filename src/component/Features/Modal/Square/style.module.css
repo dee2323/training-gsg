@@ -1,0 +1,15 @@
+.square {
+    height: 40px;
+    width: 50px;
+    background-color: #d0d0d0d0;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    margin-left: 4px;
+    cursor: pointer;
+    margin-top: -8px;
+}
+
+.square:hover {
+    background-color: grey;
+}

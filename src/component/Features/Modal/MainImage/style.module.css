@@ -1,0 +1,14 @@
+ .col2 {
+     width: 35%;
+     /* background-color: aqua; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ .col2 img {
+     display: block;
+     height: 85%;
+     margin-bottom: 20px;
+ }
