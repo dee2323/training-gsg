@@ -1,13 +1,12 @@
 .footer {
     height: 17.8rem;
     background-color: #33333A;
-
     color: white;
 }
 
 .footer ul {
     margin-top: 41px;
-    margin-left: 100px;
+    margin-left: 70px;
     justify-content: space-around;
     width: 776px;
 }

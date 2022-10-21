@@ -5,6 +5,8 @@
     height: 600px;
     position: relative;
     /* width: 1440px; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1,

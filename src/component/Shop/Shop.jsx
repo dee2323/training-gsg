@@ -9,11 +9,11 @@ export default class Shop extends Component {
     return (
       <>
         <Title title={'Shop'} />
-        <Container>
+        
         <div className={` ${style.shop} container`}>
         <Items />
       </div>
-      </Container>
+     
         
       </>
     );
