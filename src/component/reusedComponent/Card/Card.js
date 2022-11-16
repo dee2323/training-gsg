@@ -20,7 +20,7 @@ export default class Card extends Component {
         style={{ width: "220px", height: "300px" }}
       />
   
-      <h3>
+      <h3 style={{textOverflow: "ellipsis",overflow:"hidden",whiteSpace:"nowrap"}}>
         {this.props.lable} <br />
         <br /> {this.props.price}
       </h3>

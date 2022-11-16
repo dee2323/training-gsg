@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import styles from "./style.module.css";
-
+import {Link} from 'react-router-dom'
 export default class ListItems extends Component {
   render() {
-    const menuItems = ["shop", "fabric", "journal", "about"];
+    const menuItems = [ "fabric", "journal", "about"];
     return (
       <div className={styles.menuItems}>
         
         <ul className={styles.items}>
+        <li className={styles.innerItems}><Link to={"shop"}>{"shop"}</Link></li>
           {menuItems.map((item) => (
             <li className={styles.innerItems}>{item}</li>
           ))}
-          <li className={styles.innerItems}>login</li>
         </ul>
       </div>
     );

@@ -1,0 +1,30 @@
+.heroContainer {
+    height: 37.6rem;
+    background-color: #F3F3F3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #030303;
+}
+
+.header {
+    position: absolute;
+    top: 11.34rem;
+}
+
+.p {
+    position: absolute;
+    top: 17.8rem;
+    width: 34rem;
+    line-height: 1.67;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.heroContainer img {
+    display: block;
+    position: absolute;
+    right: 135px;
+    width: 22rem;
+    height: 100%;
+}

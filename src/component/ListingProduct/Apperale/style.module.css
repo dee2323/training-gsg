@@ -1,0 +1,22 @@
+.container {
+    width: 86%;
+    margin: auto;
+    display: flex;
+}
+
+.container .filter {
+    width: 20%;
+    padding-top: 19px;
+}
+
+.container .products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+}
+
+
+
+.container .products {
+    width: 80%;
+}
