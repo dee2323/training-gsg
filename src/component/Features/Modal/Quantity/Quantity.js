@@ -3,6 +3,7 @@ import Square from '../Square/Square'
 import style from './style.module.css'
 
 const Quantity = () => {
+  
   return (
     <>
     <div className={style.quantity}>Quantity</div>
