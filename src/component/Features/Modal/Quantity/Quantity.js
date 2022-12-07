@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Square from '../Square/Square'
 import style from './style.module.css'
 
-const Quantity = () => {
+const Quantity = ({products}) => {
   
   return (
     <>
@@ -10,8 +11,8 @@ const Quantity = () => {
     <Square  text='+'/>
     <Square  text='2'/>
     <Square  text='-'/>
-    <button className={style.btn}>Add to cart</button>
-    <span className={style.quantitySize}>Add to wishlist</span>
+    <button className={style.btn}><Link to="">View Full product Details</Link></button>
+    <span className={style.quantitySize}>Add</span>
     
     </>
   )

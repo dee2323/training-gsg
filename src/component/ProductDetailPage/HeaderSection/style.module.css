@@ -1,0 +1,11 @@
+.navContainer {
+    display: flex;
+    background-color: red;
+    padding: 1rem;
+    padding-left: 6rem;
+
+}
+
+.navContainer p {
+    padding: .5rem;
+}

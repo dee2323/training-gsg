@@ -15,7 +15,6 @@ import Quantity from './Quantity/Quantity'
 const PopUp = ({show,products,index}) => {
     const [isOpen,setIsOpen]=useState(false)
     const [close,setClose]=useState(true)
-    
     const {images}=products;
     return (
     <div>
@@ -31,27 +30,20 @@ const PopUp = ({show,products,index}) => {
       
       <h3 className={style.header}>The Sideswept Dhoti  <button  onClick={()=>{setIsOpen(false); setClose(false)}}>x</button></h3>
       <hr  />
-      <div className={style.modalContainer}>
+      <div className={style.modalContainer} >
       <SideImages images={images} />
-     
-     <MainImage image={products.images[1]} />
 
-
-
+      <MainImage image={products.images[1]} />
       <div className={style.col3}>  
       <h3>{products.title}</h3>
       <Price price={products.price}/>
       
-     <Description description={products.description} />
-
+      <Description description={products.description} />
     <Section />
       <Size />
-      <Quantity />
-      
+      <Quantity products={products} />
+      </div> 
       </div>
-
-      </div>
-     
       </Modal>
     </div>
   )

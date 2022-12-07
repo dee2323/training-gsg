@@ -1,45 +1,44 @@
-.formContainerr {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(143,
-            96,
-            96);
+.form {
+    background-color: rgb(201, 197, 197);
+    width: 70%;
+    margin: auto;
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.formContainerr form {
-    display: flex;
-    align-items: center;
-    background-color: #eee3e3;
-    width: 40%;
-    height: 15rem;
-    justify-content: flex-start;
-    padding-bottom: 1rem;
     flex-wrap: wrap;
-    width: 50%;
-    border-radius: 1.5rem;
-    -webkit-border-radius: 1.5rem;
-    -moz-border-radius: 1.5rem;
-    -ms-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    margin-bottom: 7rem;
 }
 
+.form input {
+    padding: 1rem;
+    outline: none;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    width: 90%;
+    margin-top: 1.4rem;
 
+}
 
-.formContainerr input {
+.btn {
+    all: unset;
     display: block;
-    margin-top: 1rem;
-    padding: .5rem;
-    width: 60%;
-    margin-left: -5rem;
-
-}
-
-.formContainerr label {
-    text-transform: capitalize;
-    padding-top: 1.3rem;
-    width: 30%;
-    margin-left: 3rem;
+    width: 20%;
+    background-color: blue;
+    height: 4rem;
+    text-align: center;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    margin-top: .7rem;
 }

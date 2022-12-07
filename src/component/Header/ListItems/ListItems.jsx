@@ -8,7 +8,7 @@ export default class ListItems extends Component {
       <div className={styles.menuItems}>
         
         <ul className={styles.items}>
-        <li className={styles.innerItems}><Link to={"shop"}>{"shop"}</Link></li>
+        <li className={styles.innerItems}><Link to={"shop"} style={{color:'black',textDecoration:'none'}}>{"shop"}</Link></li>
           {menuItems.map((item) => (
             <li className={styles.innerItems}>{item}</li>
           ))}
