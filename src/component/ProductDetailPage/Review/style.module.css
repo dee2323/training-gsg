@@ -1,0 +1,26 @@
+
+.firstRow{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+}
+.btn {
+    text-align: center;
+    background-color: rgba(51, 51, 58, 1);
+    width: 130px;
+    height: 40;
+    padding: 12px;
+    display: block;
+    border: none;
+    color: white;
+    font-weight: 300;
+    position: static;
+}
+.para{
+    padding: 2rem;
+    width: 60%;
+    margin: auto;
+}

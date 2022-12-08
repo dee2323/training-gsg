@@ -6,8 +6,8 @@ import {data} from './response'
 function App() {
   return (
    <>
-   <ProductDetailPage products={data.products[1]} />
- {/*<Router />*/}
+   {/* <ProductDetailPage /> */}
+<Router />
    
  
    </>

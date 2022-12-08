@@ -1,0 +1,17 @@
+.Container{
+   
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+}
+.ImageSection{
+    height: 430px;
+    background-color: #d0d0d0;
+    color: transparent;
+}
+
+.pContainer{
+    background-color: #ddd;
+    padding: 1rem;
+    
+}

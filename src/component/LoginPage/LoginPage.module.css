@@ -1,17 +1,22 @@
+.container{
+    background-color: rgba(199, 168, 233, 0.192);
+    height: 90vh;
+    width: 100%;
+    margin-bottom: -2.7rem ;
+    display: flex;
+    align-items: center;
+}
 .form {
-    background-color: rgb(201, 197, 197);
-    width: 70%;
+    background-color: #fff;
+    width: 50%;
     margin: auto;
     margin-top: 4rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 2rem;
-    border-radius: 3rem;
-    -webkit-border-radius: 3rem;
-    -moz-border-radius: 3rem;
-    -ms-border-radius: 3rem;
-    -o-border-radius: 3rem;
+    
+
     margin-bottom: 7rem;
 }
 
@@ -32,7 +37,7 @@
     all: unset;
     display: block;
     width: 20%;
-    background-color: blue;
+    background-color: rgba(87, 87, 177, 0.582);
     height: 4rem;
     text-align: center;
     border-radius: .5rem;

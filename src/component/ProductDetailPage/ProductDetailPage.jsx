@@ -1,37 +1,36 @@
 import React from 'react'
-import Description from '../Features/Modal/Description/Description'
-import MainImage from '../Features/Modal/MainImage/MainImage'
-import Price from '../Features/Modal/Price/Price'
-import SideImages from '../Features/Modal/SideImages/SideImages'
 import HeaderSection from './HeaderSection/HeaderSection'
-import Quantity from '../Features/Modal/Quantity/Quantity'
-import Section from '../Features/Modal/Section/Section'
-import Size from '../Features/Modal/Size/Size'
-import style from '../Features/Modal/style.module.css'
+import s from './style.module.css'
 import {data} from './response'
-const ProductDetailPage = ({products}) => {
+import RecommandationSection from './RecommandationSection/RecommandationSection'
+import ParagraphSection from './ParagraphSection/ParagraphSection'
+import CardSection from './CardSection/CardSection'
+import Footer from '../Footer/Footer'
+import Review from './Review/Review'
+import ShowSection from './ShowSection/ShowSection'
+
+
+
+
+const products=data.products[1]
+const ProductDetailPage = () => {
   const {images}=products;
 return (
    <>
    <HeaderSection />
-    
-    <h3 className={style.header}>The Sideswept Dhoti</h3>
-    <hr  />
-    <div className={style.modalContainer} >
-    <SideImages images={images} />
-
-    <MainImage image={products.images[1]} />
-    <div className={style.col3}>  
-    <h3>{products.title}</h3>
-    <Price price={products.price}/>
-    
-    <Description description={products.description} />
-  <Section />
-    <Size />
-    <Quantity products={products} />
-    </div> 
+   <ShowSection products={products} images={images} />
+    <div className={s.ImageSection}>
+deema
     </div>
     
+    <ParagraphSection />
+   <CardSection images={images} />
+   <div className={s.pContainer}> 
+        <ParagraphSection /></div>
+        <Review />
+        <RecommandationSection />
+        <Footer />
+        
    </>
 )
 }

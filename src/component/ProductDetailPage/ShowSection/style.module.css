@@ -1,0 +1,9 @@
+.Container{
+    width: 90%;
+    margin: auto;
+    padding: 3rem;
+}
+
+.p{
+    border-bottom: 1px solid #d0d0d0;
+}

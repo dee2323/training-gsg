@@ -3,7 +3,7 @@
 
 
 .mainContainer {
-    width: 95%;
+    width: 100%;
     background-color: rgb(250, 248, 248);
     padding-bottom: 50px;
     display: flex;
@@ -15,7 +15,6 @@
 }
 
 .exploreContainer {
-
     padding: 10px;
     background-color: rgb(250, 248, 248);
     position: relative;
@@ -63,7 +62,7 @@
 }
 
 .Image {
-    width: 500px;
+    width: 400px;
     height: 360px;
     padding-top: 35px;
 }

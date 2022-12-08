@@ -1,11 +1,11 @@
-export  const data = [
+export  const dataE = [
     {
       title: "Connected Clothing: Raye Padit",
       description: `As a voice for conscious fashion, Raye Padit is motivated
                   by the belief that one person’s actions, no matter how small,
                   holds great impact. This core ideal has driven him to start his
                   three passion projects: Connected Threads Asia, PeyaR, and Swagalls.`,
-      image:"../assets/E2.png",
+      image:"./assets/E2.png",
     },
     {
       title: "Kérastase: A Collaboration",

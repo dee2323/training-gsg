@@ -1,16 +1,36 @@
-import React, { Component } from 'react'
+import React, { useEffect,useState} from 'react'
 import iconsStyle from './style.module.css'
+import axios from 'axios'
+import { useCookies } from "react-cookie";
+
 import search from "../icons/search.svg";
 import heart from "../icons/heart.svg";
 import shape from "../icons/Shape.svg";
 import { Link } from 'react-router-dom';
 
-export default class ListIcons extends Component {
-  render() {
+const  ListIcons=()=>{
+  const [cookie, setCookie] = useCookies();
+  const [userData, setUserData] = useState({});
+  useEffect(() => {
+    axios
+      .get("http://restapi.adequateshop.com/api/users/148307", {
+        headers: {
+          Authorization: `Bearer ${cookie.token}`,
+        },
+      })
+      .then((user) => setUserData(user.data));
+  }, []);
+
+ 
     return (
         <ul className={iconsStyle.icons}>
        
-        <li className={iconsStyle.login}><Link to={"login"} style={{color:'black',textDecoration:'none'}}>{"Login"}</Link></li>
+        {cookie.token?<div style={{display:'flex',alignItems:'center',marginTop:'1rem'}}>
+          <div style={{height:'60px',width:'60px',borderRadius:'30px',marginRight:'4px'}}><img src={userData.profilepicture} style={{height:'100%',width:'100%',borderRadius:'50%'}} /></div>
+        Hello {cookie.name} from {userData.location}
+      </div>:
+      <li className={iconsStyle.login}>
+          <Link to={"login"} style={{color:'black',textDecoration:'none'}}>{"Login"}</Link></li>}
         <li className={iconsStyle.img}>
           <img src={search} alt="search icon" />
         </li>
@@ -25,4 +45,4 @@ export default class ListIcons extends Component {
       </ul>
     );
   }
-}
+export default ListIcons

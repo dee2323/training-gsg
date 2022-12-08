@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
-import AddsBar from '../AddsBar/AddsBar'
-import Header from '../Header/Header'
+import React,{useState,useEffect} from 'react'
+
 import Slider from '../Slider/Slider'
 import Features from '../Features/Features'
 import About from '../About/About'
@@ -8,13 +7,13 @@ import Recomanded from '../Recomanded/Recomanded'
 import Shop from '../Shop/Shop'
 import Seen from '../Seen/Seen'
 import Explore from '../Explore/Explore'
-import Footer from '../Footer/Footer'
 
-export default class Home extends Component {
-  render() {
-    return (
+const Home =()=> {
+  // const location = useLocation();
+  //   const state = location.state;
+  //   console.log(state,'sss');
+return (
  <>
-
  <Slider />
  <Features />
  <About />
@@ -26,4 +25,4 @@ export default class Home extends Component {
  </>
     )
   }
-}
+export default Home;

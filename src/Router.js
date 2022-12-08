@@ -17,6 +17,7 @@ export default class Router extends Component {
         <Header />
         <Routes>
             <Route index element={ <Home />}/>
+            
             <Route path='shop' element={<ListingProduct/>}/>
             <Route path='login' element={<LoginPage />} />
         </Routes>
