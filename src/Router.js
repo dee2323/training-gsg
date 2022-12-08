@@ -8,6 +8,7 @@ import AddsBar from "./component/AddsBar/AddsBar";
 import Footer from "./component/Footer/Footer";
 import Header from "./component/Header/Header";
 import LoginPage from "./component/LoginPage/LoginPage";
+import ProductDetailPage from "./component/ProductDetailPage/ProductDetailPage";
 
 export default class Router extends Component {
   render() {
@@ -20,6 +21,7 @@ export default class Router extends Component {
             
             <Route path='shop' element={<ListingProduct/>}/>
             <Route path='login' element={<LoginPage />} />
+            <Route path="/product/details" element={<ProductDetailPage />} />
         </Routes>
         <Footer />
     </BrowserRouter>

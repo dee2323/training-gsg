@@ -1,6 +1,7 @@
 .navContainer {
     display: flex;
-    border-bottom: .5px solid black;
+    border-bottom: .5px solid #d0d0d0;
+    border-top: .5px solid #d0d0d0;
     padding: 1rem;
     padding-left: 6rem;
 

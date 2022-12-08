@@ -11,6 +11,7 @@ import Description from './Description/Description'
 import Section from './Section/Section'
 import Price from './Price/Price'
 import Quantity from './Quantity/Quantity'
+import { Link } from 'react-router-dom'
 
 const PopUp = ({show,products,index}) => {
     const [isOpen,setIsOpen]=useState(false)
@@ -42,6 +43,7 @@ const PopUp = ({show,products,index}) => {
     <Section />
       <Size />
       <Quantity products={products} />
+      <button className={style.btn} style={{position:'absolute',left:'40rem',top:'27rem',width:'12rem',height:'4rem'}}><Link to="/product/details" style={{color:'#fff',textDecoration:'none'}} state={{products}}>View Full product Details</Link></button>
       </div> 
       </div>
       </Modal>

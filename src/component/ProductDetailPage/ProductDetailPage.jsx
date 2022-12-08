@@ -1,19 +1,17 @@
 import React from 'react'
 import HeaderSection from './HeaderSection/HeaderSection'
 import s from './style.module.css'
-import {data} from './response'
 import RecommandationSection from './RecommandationSection/RecommandationSection'
 import ParagraphSection from './ParagraphSection/ParagraphSection'
 import CardSection from './CardSection/CardSection'
-import Footer from '../Footer/Footer'
 import Review from './Review/Review'
 import ShowSection from './ShowSection/ShowSection'
-
-
-
-
-const products=data.products[1]
+import { useLocation } from 'react-router-dom';
 const ProductDetailPage = () => {
+   const location = useLocation();
+    const state = location.state;
+    console.log(state,'sss');
+    const {products}=state;
   const {images}=products;
 return (
    <>
@@ -29,7 +27,6 @@ deema
         <ParagraphSection /></div>
         <Review />
         <RecommandationSection />
-        <Footer />
         
    </>
 )
