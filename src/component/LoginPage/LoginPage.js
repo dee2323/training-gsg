@@ -17,7 +17,7 @@ const LoginPage = () => {
     setFormData({ ...formData, password: e.target.value });
   };
   const handleSubmit = async () => {
-    console.log(formData);
+
     const {
       data: {
         data: { Token, Name },
@@ -45,7 +45,7 @@ const LoginPage = () => {
         value={formData.password}
         onChange={handlePasswordChange}
       />
-      <button className={style.btn} onClick={handleSubmit}> <Link to='/'  style={{color:'black',textDecoration:'none',display:'block',width:'100%'}} state={{success}}>{"Login"}</Link></button>
+      <button className={style.btn} onClick={handleSubmit}> <Link to='/'  style={{color:'black',textDecoration:'none',display:'block',width:'100%',color:'#fff',border:'1px solid #fff',padding:'1rem',marginTop:'1rem',backgroundColor:' rgba(51, 51, 58, 1)'}} >{"Login"}</Link></button>
     </div></div>
   )
 }

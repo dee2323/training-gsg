@@ -28,22 +28,12 @@
     -moz-border-radius: .5rem;
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
-    width: 90%;
+    width: 95%;
     margin-top: 1.4rem;
 
 }
 
 .btn {
     all: unset;
-    display: block;
-    width: 20%;
-    background-color: rgba(87, 87, 177, 0.582);
-    height: 4rem;
-    text-align: center;
-    border-radius: .5rem;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
-    margin-top: .7rem;
+  display: block;
 }

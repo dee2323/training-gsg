@@ -9,9 +9,6 @@ import Explore from '../Explore/Explore'
 
 
 const Home =()=> {
-  // const location = useLocation();
-  //   const state = location.state;
-  //   console.log(state,'sss');
 return (
  <>
  <Slider />
