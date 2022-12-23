@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import iconsStyle from './style.module.css'
 import axios from 'axios'
 import { useCookies } from "react-cookie";
-
+import { productContext } from '../../../context/productContext';
 import search from "../icons/search.svg";
 import heart from "../icons/heart.svg";
 import shape from "../icons/Shape.svg";
 import { Link } from 'react-router-dom';
 
 const ListIcons = () => {
+  const { count } = useContext(productContext)
   const [cookie, setCookie, removeCookie] = useCookies();
   const [userData, setUserData] = useState({});
   useEffect(() => {
@@ -42,13 +43,13 @@ const ListIcons = () => {
       <li className={iconsStyle.img}>
         <img src={search} alt="search icon" />
       </li>
-      <li className={iconsStyle.img}>
-
-        <img src={heart} alt="heart icon" />
+      <li className={iconsStyle.img} >
+        <Link to="wish">
+          <img src={heart} alt="heart icon" /></Link>
       </li>
       <li className={iconsStyle.img}>
+        <Link to="cart"><img src={shape} alt="shape icon" /></Link>
 
-        <img src={shape} alt="shape icon" />
       </li>
       {cookie.token ? <li className={iconsStyle.login}>
         <button style={{ all: 'unset' }} onClick={() => { removeCookie('token') }}><Link to={"/"} style={{ color: 'black', textDecoration: 'none', marginLeft: '.9rem' }}>{"Logout"}</Link></button>

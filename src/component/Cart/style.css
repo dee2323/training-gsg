@@ -1,0 +1,16 @@
+
+.outer-container{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.total-price{
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+width: 60%;
+padding: 1rem;
+}

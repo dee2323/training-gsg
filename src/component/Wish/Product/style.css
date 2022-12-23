@@ -1,0 +1,19 @@
+.product{
+    width: 70%;
+    /* padding: 1rem; */
+    height: 7.5rem;
+    /* background-color: pink; */
+    padding: .3rem;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px #ddd solid;
+    border-radius: .3rem;
+    margin-bottom: .4rem;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.product img{
+    height: 7rem;
+    width: 7rem;
+}

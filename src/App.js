@@ -1,16 +1,16 @@
 
 import './App.css';
-import ProductDetailPage from './component/ProductDetailPage/ProductDetailPage';
 import Router from './Router';
-import {data} from './response'
+import ProductProvider from './context/productContext';
 function App() {
   return (
-   <>
-   {/* <ProductDetailPage /> */}
-<Router />
-   
- 
-   </>
+    <>
+      <ProductProvider>
+        <Router />
+      </ProductProvider>
+
+
+    </>
   );
 }
 
